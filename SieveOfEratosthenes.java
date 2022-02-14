@@ -22,7 +22,7 @@ public class SieveOfEratosthenes {
     private static void printPrimes(int n) {
         int[] primes = new int[n + 1];
         int m = (int) Math.sqrt(n);
-        for (int i = 2; i < m; i++) {
+        for (int i = 2; i <= m; i++) {
             if (primes[i] == 0)
                 for (int j = i * i; j <= n; j += i)
                     primes[j] = 1;
